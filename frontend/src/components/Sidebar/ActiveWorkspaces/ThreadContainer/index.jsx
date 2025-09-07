@@ -199,7 +199,7 @@ function NewThreadButton({ workspace }) {
           </p>
         ) : (
           <p className="text-left text-white light:text-theme-text-primary text-sm">
-            New Thread
+            New Chat
           </p>
         )}
       </div>

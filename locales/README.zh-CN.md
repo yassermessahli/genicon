@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <a href="https://anythingllm.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="AnythingLLM logo"></a>
+  <a href="https://anythingllm.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="Genicon logo"></a>
 </p>
 
 <div align='center'>
@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-    <b>AnythingLLM：</b> 您一直在寻找的全方位AI应用程序。<br />
+    <b>Genicon：</b> 您一直在寻找的全方位AI应用程序。<br />
     与您的文档聊天，使用AI代理，高度可配置，多用户，无需繁琐的设置。
 </p>
 
@@ -33,10 +33,10 @@
 </p>
 
 <p align="center">
-👉 适用于桌面（Mac、Windows和Linux）的AnythingLLM！<a href="https://anythingllm.com/download" target="_blank">立即下载</a>
+👉 适用于桌面（Mac、Windows和Linux）的Genicon！<a href="https://anythingllm.com/download" target="_blank">立即下载</a>
 </p>
 
-这是一个全栈应用程序，可以将任何文档、资源（如网址链接、音频、视频）或内容片段转换为上下文，以便任何大语言模型（LLM）在聊天期间作为参考使用。此应用程序允许您选择使用哪个LLM或向量数据库，同时支持多用户管理并设置不同权限。
+这是一个全栈应用程序，可以将任何文档、资源（如网址链接、音频、视频）或内容片段转换为上下文，以便任何大语言模型（LLM）在聊天期间作为参考使用。此应用程序允许您选择使用哪个 LLM 或向量数据库，同时支持多用户管理并设置不同权限。
 
 ![聊天](https://github.com/Mintplex-Labs/anything-llm/assets/16845892/cfc5f47c-bd91-4067-986c-f3f49621a859)
 
@@ -49,31 +49,32 @@
 
 ### 产品概览
 
-AnythingLLM是一个全栈应用程序，您可以使用现成的商业大语言模型或流行的开源大语言模型，再结合向量数据库解决方案构建一个私有ChatGPT，不再受制于人：您可以本地运行，也可以远程托管，并能够与您提供的任何文档智能聊天。
+Genicon 是一个全栈应用程序，您可以使用现成的商业大语言模型或流行的开源大语言模型，再结合向量数据库解决方案构建一个私有 ChatGPT，不再受制于人：您可以本地运行，也可以远程托管，并能够与您提供的任何文档智能聊天。
 
-AnythingLLM将您的文档划分为称为`workspaces` (工作区)的对象。工作区的功能类似于线程，同时增加了文档的容器化。工作区可以共享文档，但工作区之间的内容不会互相干扰或污染，因此您可以保持每个工作区的上下文清晰。
+Genicon 将您的文档划分为称为`workspaces` (工作区)的对象。工作区的功能类似于线程，同时增加了文档的容器化。工作区可以共享文档，但工作区之间的内容不会互相干扰或污染，因此您可以保持每个工作区的上下文清晰。
 
-## AnythingLLM的一些酷炫特性
+## Genicon 的一些酷炫特性
+
 - 🆕 [**完全兼容 MCP**](https://docs.anythingllm.com/mcp-compatibility/overview)
-- 🆕 [**无代码AI代理构建器**](https://docs.anythingllm.com/agent-flows/overview)
-- 🖼️ **多用户实例支持和权限管理（支持封闭源和开源LLM！）**
+- 🆕 [**无代码 AI 代理构建器**](https://docs.anythingllm.com/agent-flows/overview)
+- 🖼️ **多用户实例支持和权限管理（支持封闭源和开源 LLM！）**
 - [**自定义人工智能代理**](https://docs.anythingllm.com/agent/custom/introduction)
-- 👤 多用户实例支持和权限管理 _仅限Docker版本_
+- 👤 多用户实例支持和权限管理 _仅限 Docker 版本_
 - 🦾 工作区内的智能体（浏览网页、运行代码等）
 - 💬 [为您的网站定制的可嵌入聊天窗口](https://github.com/Mintplex-Labs/anythingllm-embed/blob/main/README.md)
-- 📖 支持多种文档类型（PDF、TXT、DOCX等）
+- 📖 支持多种文档类型（PDF、TXT、DOCX 等）
 - 带有拖放功能和清晰引用的简洁聊天界面。
 - 100%云部署就绪。
 - 兼容所有主流的[闭源和开源大语言模型提供商](#支持的llm嵌入模型转录模型和向量数据库)。
 - 内置节省成本和时间的机制，用于处理超大文档，优于任何其他聊天界面。
-- 全套的开发人员API，用于自定义集成！
+- 全套的开发人员 API，用于自定义集成！
 - 而且还有更多精彩功能……安装后亲自体验吧！
 
-### 支持的LLM、嵌入模型、转录模型和向量数据库
+### 支持的 LLM、嵌入模型、转录模型和向量数据库
 
-**支持的LLM：**
+**支持的 LLM：**
 
-- [任何与llama.cpp兼容的开源模型](/server/storage/models/README.md#text-generation-llm-selection)
+- [任何与 llama.cpp 兼容的开源模型](/server/storage/models/README.md#text-generation-llm-selection)
 - [OpenAI](https://openai.com)
 - [OpenAI (通用)](https://openai.com)
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
@@ -103,7 +104,7 @@ AnythingLLM将您的文档划分为称为`workspaces` (工作区)的对象。工
 
 **支持的嵌入模型：**
 
-- [AnythingLLM原生嵌入器](/server/storage/models/README.md)（默认）
+- [Genicon 原生嵌入器](/server/storage/models/README.md)（默认）
 - [OpenAI](https://openai.com)
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 - [LocalAI (全部)](https://localai.io/)
@@ -113,7 +114,7 @@ AnythingLLM将您的文档划分为称为`workspaces` (工作区)的对象。工
 
 **支持的转录模型：**
 
-- [AnythingLLM内置](https://github.com/Mintplex-Labs/anything-llm/tree/master/server/storage/models#audiovideo-transcription) （默认）
+- [Genicon 内置](https://github.com/Mintplex-Labs/anything-llm/tree/master/server/storage/models#audiovideo-transcription) （默认）
 - [OpenAI](https://openai.com/)
 
 **TTS (文本转语音) 支持：**
@@ -144,25 +145,25 @@ AnythingLLM将您的文档划分为称为`workspaces` (工作区)的对象。工
 
 这个单库由六个主要部分组成：
 
-- `frontend`: 一个 viteJS + React 前端，您可以运行它来轻松创建和管理LLM可以使用的所有内容。
+- `frontend`: 一个 viteJS + React 前端，您可以运行它来轻松创建和管理 LLM 可以使用的所有内容。
 - `server`: 一个 NodeJS express 服务器，用于处理所有交互并进行所有向量数据库管理和 LLM 交互。
-- `collector`: NodeJS express 服务器，用于从UI处理和解析文档。
+- `collector`: NodeJS express 服务器，用于从 UI 处理和解析文档。
 - `docker`: Docker 指令和构建过程 + 从源代码构建的信息。
 - `embed`: 用于生成和创建[网页嵌入组件](https://github.com/Mintplex-Labs/anythingllm-embed)的子模块.
 - `browser-extension`: 用于[Chrome 浏览器扩展](https://github.com/Mintplex-Labs/anythingllm-extension)的子模块.
 
 ## 🛳 自托管
 
-Mintplex Labs和社区维护了许多部署方法、脚本和模板，您可以使用它们在本地运行AnythingLLM。请参阅下面的表格，了解如何在您喜欢的环境上部署，或自动部署。
+Mintplex Labs 和社区维护了许多部署方法、脚本和模板，您可以使用它们在本地运行 Genicon。请参阅下面的表格，了解如何在您喜欢的环境上部署，或自动部署。
 | Docker | AWS | GCP | Digital Ocean | Render.com |
 |----------------------------------------|----|-----|---------------|------------|
 | [![在 Docker 上部署][docker-btn]][docker-deploy] | [![在 AWS 上部署][aws-btn]][aws-deploy] | [![在 GCP 上部署][gcp-btn]][gcp-deploy] | [![在DigitalOcean上部署][do-btn]][do-deploy] | [![在 Render.com 上部署][render-btn]][render-deploy] |
 
-| Railway  |  RepoCloud | Elestio |
-| --- | --- | --- |
+| Railway                                             | RepoCloud                                                 | Elestio                                             |
+| --------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------- |
 | [![在 Railway 上部署][railway-btn]][railway-deploy] | [![在 RepoCloud 上部署][repocloud-btn]][repocloud-deploy] | [![在 Elestio 上部署][elestio-btn]][elestio-deploy] |
 
-[其他方案：不使用Docker配置AnythingLLM实例 →](../BARE_METAL.md)
+[其他方案：不使用 Docker 配置 Genicon 实例 →](../BARE_METAL.md)
 
 ## 如何设置开发环境
 
@@ -178,45 +179,42 @@ Mintplex Labs和社区维护了许多部署方法、脚本和模板，您可以�
 
 ## 外部应用与集成
 
-_以下是一些与 AnythingLLM 兼容的应用程序，但并非由 Mintplex Labs 维护。列在此处并不代表官方背书。_
+_以下是一些与 Genicon 兼容的应用程序，但并非由 Mintplex Labs 维护。列在此处并不代表官方背书。_
 
 - [Midori AI 子系统管理器 - 使用 Docker 容器技术高效部署 AI 系统的简化方式](https://io.midori-ai.xyz/subsystem/anythingllm/) - 使用 Docker 容器技术高效部署 AI 系统的简化方式。
-- [Coolify](https://coolify.io/docs/services/anythingllm/) - 一键部署 AnythingLLM。
-- [适用于 Microsoft Word 的 GPTLocalhost](https://gptlocalhost.com/demo/) - 一个本地 Word 插件，让你可以在 Microsoft Word 中使用 AnythingLLM。
+- [Coolify](https://coolify.io/docs/services/anythingllm/) - 一键部署 Genicon。
+- [适用于 Microsoft Word 的 GPTLocalhost](https://gptlocalhost.com/demo/) - 一个本地 Word 插件，让你可以在 Microsoft Word 中使用 Genicon。
 
 ## 远程信息收集与隐私保护
 
-由 Mintplex Labs Inc 开发的 AnythingLLM 包含一个收集匿名使用信息的 Telemetry 功能。
+由 Mintplex Labs Inc 开发的 Genicon 包含一个收集匿名使用信息的 Telemetry 功能。
 
 <details>
-<summary><kbd>有关 AnythingLLM 的远程信息收集与隐私保护更多信息</kbd></summary>
-
-
-
+<summary><kbd>有关 Genicon 的远程信息收集与隐私保护更多信息</kbd></summary>
 
 ### 为什么收集信息？
 
-我们使用这些信息来帮助我们理解 AnythingLLM 的使用情况，帮助我们确定新功能和错误修复的优先级，并帮助我们提高 AnythingLLM 的性能和稳定性。
+我们使用这些信息来帮助我们理解 Genicon 的使用情况，帮助我们确定新功能和错误修复的优先级，并帮助我们提高 Genicon 的性能和稳定性。
 
 ### 怎样关闭
 
-在服务器或 Docker 的 .env 设置中将 `DISABLE_TELEMETRY` 设置为 "true"，即可选择不参与遥测数据收集。你也可以在应用内通过以下路径操作：侧边栏 > `Privacy` （隐私） > 关闭遥测功能。 
+在服务器或 Docker 的 .env 设置中将 `DISABLE_TELEMETRY` 设置为 "true"，即可选择不参与遥测数据收集。你也可以在应用内通过以下路径操作：侧边栏 > `Privacy` （隐私） > 关闭遥测功能。
 
 ### 你们跟踪收集哪些信息？
 
 我们只会跟踪有助于我们做出产品和路线图决策的使用细节，具体包括：
 
-- 您的安装方式（Docker或桌面版）
+- 您的安装方式（Docker 或桌面版）
 - 文档被添加或移除的时间。但不包括文档内的具体内容。我们只关注添加或移除文档这个行为。这些信息能让我们了解到文档功能的使用情况。
 - 使用中的向量数据库类型。让我们知道哪个向量数据库最受欢迎，并在后续更新中优先考虑相应的数据库。
-- 使用中的LLM类型。让我们知道谁才是最受欢迎的LLM模型，并在后续更新中优先考虑相应模型。
+- 使用中的 LLM 类型。让我们知道谁才是最受欢迎的 LLM 模型，并在后续更新中优先考虑相应模型。
 - 信息被`发送`出去。这是最常规的“事件/行为/event”，并让我们了解到所有安装了这个项目的每日活动情况。同样，只收集`发送`这个行为的信息，我们不会收集关于聊天本身的性质或内容的任何信息。
 
-您可以通过查找所有调用`Telemetry.sendTelemetry`的位置来验证这些声明。此外，如果启用，这些事件也会被写入输出日志，因此您也可以看到发送了哪些具体数据。**IP或其他识别信息不会被收集**。Telemetry远程信息收集的方案来自[PostHog](https://posthog.com/) - 一个开源的远程信息收集服务。
+您可以通过查找所有调用`Telemetry.sendTelemetry`的位置来验证这些声明。此外，如果启用，这些事件也会被写入输出日志，因此您也可以看到发送了哪些具体数据。**IP 或其他识别信息不会被收集**。Telemetry 远程信息收集的方案来自[PostHog](https://posthog.com/) - 一个开源的远程信息收集服务。
 
-我们非常重视隐私，且不用烦人的弹窗问卷来获取反馈，希望你能理解为什么我们想要知道该工具的使用情况，这样我们才能打造真正值得使用的产品。所有匿名数据 _绝不会_ 与任何第三方共享。 
+我们非常重视隐私，且不用烦人的弹窗问卷来获取反馈，希望你能理解为什么我们想要知道该工具的使用情况，这样我们才能打造真正值得使用的产品。所有匿名数据 _绝不会_ 与任何第三方共享。
 
-[在源代码中查看所有信息收集活动](https://github.com/search?q=repo%3AMintplex-Labs%2Fanything-llm%20.sendTelemetry\(&type=code)
+[在源代码中查看所有信息收集活动](https://github.com/search?q=repo%3AMintplex-Labs%2Fanything-llm%20.sendTelemetry(&type=code)
 
 </details>
 
@@ -249,7 +247,7 @@ _以下是一些与 AnythingLLM 兼容的应用程序，但并非由 Mintplex La
 ## 🔗 更多产品
 
 - **[VectorAdmin][vector-admin]**：一个用于管理向量数据库的全方位图形用户界面和工具套件。
-- **[OpenAI Assistant Swarm][assistant-swarm]**：一个智能体就可以管理您所有的OpenAI助手。
+- **[OpenAI Assistant Swarm][assistant-swarm]**：一个智能体就可以管理您所有的 OpenAI 助手。
 
 <div align="right">
 

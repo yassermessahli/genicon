@@ -8,7 +8,7 @@ const TRANSLATIONS = {
     llm: {
       title: "Preferencje modeli językowych",
       description:
-        "AnythingLLM może współpracować z wieloma dostawcami modeli językowych",
+        "Genicon może współpracować z wieloma dostawcami modeli językowych",
     },
     userSetup: {
       title: "Konfiguracja użytkownika",
@@ -37,15 +37,15 @@ const TRANSLATIONS = {
         "Ustawienia te można zmienić w dowolnym momencie w ustawieniach.",
     },
     survey: {
-      title: "Witamy w AnythingLLM",
+      title: "Witamy w Genicon",
       description:
-        "Pomóż nam stworzyć AnythingLLM dostosowany do Twoich potrzeb. Opcjonalnie.",
+        "Pomóż nam stworzyć Genicon dostosowany do Twoich potrzeb. Opcjonalnie.",
       email: "Jaki jest Twój adres e-mail?",
-      useCase: "Do czego będziesz używać AnythingLLM?",
+      useCase: "Do czego będziesz używać Genicon?",
       useCaseWork: "Do pracy",
       useCasePersonal: "Do użytku osobistego",
       useCaseOther: "Inne",
-      comment: "Skąd dowiedziałeś się o AnythingLLM?",
+      comment: "Skąd dowiedziałeś się o Genicon?",
       commentPlaceholder:
         "Reddit, Twitter, GitHub, YouTube itp. - Daj nam znać, jak nas znalazłeś!",
       skip: "Pomiń ankietę",
@@ -54,7 +54,7 @@ const TRANSLATIONS = {
     workspace: {
       title: "Utwórz swój pierwszy obszar roboczy",
       description:
-        "Stwórz swój pierwszy obszar roboczy i zacznij korzystać z AnythingLLM.",
+        "Stwórz swój pierwszy obszar roboczy i zacznij korzystać z Genicon.",
     },
   },
   common: {
@@ -128,11 +128,11 @@ const TRANSLATIONS = {
   },
   welcomeMessage: {
     part1:
-      "Witamy w AnythingLLM, to narzędzie AI o otwartym kodzie źródłowym autorstwa Mintplex Labs, które zamienia wszystko w wyszkolonego chatbota, z którym można wysyłać zapytania i rozmawiać. AnythingLLM to oprogramowanie BYOK (bring-your-own-keys), więc nie ma subskrypcji ani kosztów za to oprogramowanie poza usługami, których chcesz z nim używać.",
+      "Witamy w Genicon, to narzędzie AI o otwartym kodzie źródłowym autorstwa Mintplex Labs, które zamienia wszystko w wyszkolonego chatbota, z którym można wysyłać zapytania i rozmawiać. Genicon to oprogramowanie BYOK (bring-your-own-keys), więc nie ma subskrypcji ani kosztów za to oprogramowanie poza usługami, których chcesz z nim używać.",
     part2:
-      "AnythingLLM to najprostszy sposób na połączenie potężnych produktów AI, takich jak OpenAi, GPT-4, LangChain, PineconeDB, ChromaDB i innych usług w zgrabny pakiet bez zbędnego zamieszania, aby zwiększyć produktywność 100-krotnie.",
+      "Genicon to najprostszy sposób na połączenie potężnych produktów AI, takich jak OpenAi, GPT-4, LangChain, PineconeDB, ChromaDB i innych usług w zgrabny pakiet bez zbędnego zamieszania, aby zwiększyć produktywność 100-krotnie.",
     part3:
-      "AnythingLLM może działać całkowicie lokalnie na komputerze z niewielkim narzutem, nawet nie zauważysz, że tam jest! Nie jest wymagany procesor graficzny. Dostępna jest również instalacja w chmurze i lokalna. Ekosystem narzędzi AI staje się coraz potężniejszy każdego dnia. AnythingLLM sprawia, że jest on łatwy w użyciu.",
+      "Genicon może działać całkowicie lokalnie na komputerze z niewielkim narzutem, nawet nie zauważysz, że tam jest! Nie jest wymagany procesor graficzny. Dostępna jest również instalacja w chmurze i lokalna. Ekosystem narzędzi AI staje się coraz potężniejszy każdego dnia. Genicon sprawia, że jest on łatwy w użyciu.",
     githubIssue: "Utwórz zgłoszenie w serwisie GitHub",
     user1: "Jak zacząć?",
     part4:
@@ -141,7 +141,7 @@ const TRANSLATIONS = {
     user2:
       "Czy to coś w rodzaju Dropboxa AI? A co z czatowaniem? To jest chatbot, prawda?",
     part5:
-      "AnythingLLM to coś więcej niż inteligentniejszy Dropbox. AnythingLLM oferuje dwa sposoby komunikacji z danymi: <i>Pytanie:</i> Twoje czaty zwrócą dane lub wnioski znalezione w dokumentach w obszarze roboczym, do którego ma dostęp. Dodanie większej liczby dokumentów do obszaru roboczego czyni go bardziej inteligentnym! <i>Konwersacyjny:</i> Twoje dokumenty + bieżąca historia czatów jednocześnie przyczyniają się do wiedzy LLM. Świetnie nadaje się do dodawania informacji tekstowych w czasie rzeczywistym lub poprawek i nieporozumień, które może mieć LLM. Możesz przełączać się między tymi trybami <i>w trakcie rozmowy! </i>",
+      "Genicon to coś więcej niż inteligentniejszy Dropbox. Genicon oferuje dwa sposoby komunikacji z danymi: <i>Pytanie:</i> Twoje czaty zwrócą dane lub wnioski znalezione w dokumentach w obszarze roboczym, do którego ma dostęp. Dodanie większej liczby dokumentów do obszaru roboczego czyni go bardziej inteligentnym! <i>Konwersacyjny:</i> Twoje dokumenty + bieżąca historia czatów jednocześnie przyczyniają się do wiedzy LLM. Świetnie nadaje się do dodawania informacji tekstowych w czasie rzeczywistym lub poprawek i nieporozumień, które może mieć LLM. Możesz przełączać się między tymi trybami <i>w trakcie rozmowy! </i>",
     user3: "Wow, to brzmi niesamowicie, pozwól mi już to wypróbować!",
     part6: "Miłej zabawy!",
     starOnGitHub: "Star on GitHub",
@@ -153,8 +153,7 @@ const TRANSLATIONS = {
     checklist: {
       title: "Pierwsze kroki",
       tasksLeft: "- zadania do wykonania",
-      completed:
-        "Jesteś na najlepszej drodze do zostania ekspertem AnythingLLM!",
+      completed: "Jesteś na najlepszej drodze do zostania ekspertem Genicon!",
       dismiss: "zamknij",
       tasks: {
         create_workspace: {
@@ -259,7 +258,7 @@ const TRANSLATIONS = {
       add: "Dodaj nową wiadomość",
       save: "Zapisz wiadomości",
       heading: "Wyjaśnij mi",
-      body: "Korzyści z AnythingLLM",
+      body: "Korzyści z Genicon",
     },
     pfp: {
       title: "Logo obszaru roboczego",
@@ -451,16 +450,16 @@ const TRANSLATIONS = {
   customization: {
     interface: {
       title: "Preferencje interfejsu użytkownika",
-      description: "Ustaw preferencje interfejsu użytkownika dla AnythingLLM.",
+      description: "Ustaw preferencje interfejsu użytkownika dla Genicon.",
     },
     branding: {
       title: "Branding i white-labeling",
       description:
-        "Oznakuj swoją instancję AnythingLLM niestandardowym brandingiem.",
+        "Oznakuj swoją instancję Genicon niestandardowym brandingiem.",
     },
     chat: {
       title: "Czat",
-      description: "Ustaw preferencje czatu dla AnythingLLM.",
+      description: "Ustaw preferencje czatu dla Genicon.",
       auto_submit: {
         title: "Automatyczne przesyłanie mowy",
         description: "Automatyczne przesyłanie mowy po wykryciu ciszy.",
@@ -502,7 +501,7 @@ const TRANSLATIONS = {
       "display-language": {
         title: "Język",
         description:
-          "Wybierz preferowany język interfejsu użytkownika AnythingLLM - jeśli dostępne są tłumaczenia.",
+          "Wybierz preferowany język interfejsu użytkownika Genicon - jeśli dostępne są tłumaczenia.",
       },
       logo: {
         title: "Logo",
@@ -521,7 +520,7 @@ const TRANSLATIONS = {
         system: "systemu",
         user: "użytkownika",
         message: "",
-        assistant: "Asystent czatu AnythingLLM",
+        assistant: "Asystent czatu Genicon",
         "double-click": "Kliknij dwukrotnie, aby edytować...",
         save: "Zapisz wiadomości",
       },
@@ -551,7 +550,7 @@ const TRANSLATIONS = {
   api: {
     title: "Klucze API",
     description:
-      "Klucze API umożliwiają dostęp do instancji AnythingLLM i zarządzanie nią.",
+      "Klucze API umożliwiają dostęp do instancji Genicon i zarządzanie nią.",
     link: "Przeczytaj dokumentację API",
     generate: "Generuj nowy klucz API",
     table: {
@@ -563,7 +562,7 @@ const TRANSLATIONS = {
   llm: {
     title: "Preferencje LLM",
     description:
-      "Tutaj skonfigurujesz dostawcę modeli językowych używanych do czatów i embeddingów. Upewnij się, że wszystkie klucze są aktualne i poprawne - bez tego AnythingLLM nie będzie działać.",
+      "Tutaj skonfigurujesz dostawcę modeli językowych używanych do czatów i embeddingów. Upewnij się, że wszystkie klucze są aktualne i poprawne - bez tego Genicon nie będzie działać.",
     provider: "Dostawca LLM",
     providers: {
       azure_openai: {
@@ -583,7 +582,7 @@ const TRANSLATIONS = {
       "Tutaj skonfigurujesz dostawcę modeli używanych do transkrypcji plików audio i wideo. Upewnij się, że klucze są poprawne - bez tego pliki audio nie będą transkrybowane.",
     provider: "Dostawca usług transkrypcji",
     "warn-start":
-      "Korzystanie z lokalnego modelu Whisper na komputerach z ograniczoną pamięcią RAM lub procesorem może spowodować przerwanie pracy AnythingLLM podczas przetwarzania plików multimedialnych.",
+      "Korzystanie z lokalnego modelu Whisper na komputerach z ograniczoną pamięcią RAM lub procesorem może spowodować przerwanie pracy Genicon podczas przetwarzania plików multimedialnych.",
     "warn-recommend":
       "Zalecana konfiguracja to co najmniej 2 GB pamięci RAM, przesyłaj pliki <10 MB.",
     "warn-end":
@@ -620,7 +619,7 @@ const TRANSLATIONS = {
   vector: {
     title: "Wektorowa baza danych",
     description:
-      "Tutaj skonfigurujesz wektorową bazę danych dla AnythingLLM. Upewnij się, że wszystkie ustawienia są poprawne.",
+      "Tutaj skonfigurujesz wektorową bazę danych dla Genicon. Upewnij się, że wszystkie ustawienia są poprawne.",
     provider: {
       title: "Wektorowa baza danych",
       description: "LanceDB nie wymaga żadnej konfiguracji.",
@@ -664,7 +663,7 @@ const TRANSLATIONS = {
   privacy: {
     title: "Prywatność i obsługa danych",
     description:
-      "Jest to konfiguracja sposobu, w jaki połączeni dostawcy zewnętrzni i AnythingLLM przetwarzają dane użytkownika.",
+      "Jest to konfiguracja sposobu, w jaki połączeni dostawcy zewnętrzni i Genicon przetwarzają dane użytkownika.",
     llm: "Wybór LLM",
     embedding: "Preferencje dotyczące osadzania",
     vector: "Wektorowa baza danych",
@@ -844,22 +843,22 @@ const TRANSLATIONS = {
       fetching: "Pobieranie...",
       "fetch-website": "Pobierz zawartość strony",
       "privacy-notice":
-        "Pliki zostaną przetworzone w obrębie danej instancji AnythingLLM. Pliki te nie będą udostępniane innym podmiotom.",
+        "Pliki zostaną przetworzone w obrębie danej instancji Genicon. Pliki te nie będą udostępniane innym podmiotom.",
     },
     pinning: {
       what_pinning: "Czym jest przypinanie dokumentów?",
       pin_explained_block1:
-        "Kiedy <b>przypinasz</b> dokument w AnythingLLM, dodamy całą zawartość dokumentu do okna promptu, aby LLM mógł w pełni zrozumieć jego treść.",
+        "Kiedy <b>przypinasz</b> dokument w Genicon, dodamy całą zawartość dokumentu do okna promptu, aby LLM mógł w pełni zrozumieć jego treść.",
       pin_explained_block2:
         "Działa to najlepiej w przypadku <b>dużych modeli kontekstowych</b> lub małych plików, które są krytyczne dla bazy wiedzy.",
       pin_explained_block3:
-        "Jeśli domyślnie nie otrzymujesz pożądanych odpowiedzi z AnythingLLM, przypinanie jest świetnym sposobem na uzyskanie wyższej jakości odpowiedzi za jednym kliknięciem.",
+        "Jeśli domyślnie nie otrzymujesz pożądanych odpowiedzi z Genicon, przypinanie jest świetnym sposobem na uzyskanie wyższej jakości odpowiedzi za jednym kliknięciem.",
       accept: "Ok, rozumiem",
     },
     watching: {
       what_watching: "Do czego służy oglądanie dokumentu?",
       watch_explained_block1:
-        "Podczas <b>obserwowania</b> dokumentu w AnythingLLM będziemy <i>automatycznie</i> synchronizować zawartość dokumentu z jego oryginalnym źródłem w regularnych odstępach czasu. Spowoduje to automatyczną aktualizację zawartości w każdym obszarze roboczym, w którym ten plik jest zarządzany.",
+        "Podczas <b>obserwowania</b> dokumentu w Genicon będziemy <i>automatycznie</i> synchronizować zawartość dokumentu z jego oryginalnym źródłem w regularnych odstępach czasu. Spowoduje to automatyczną aktualizację zawartości w każdym obszarze roboczym, w którym ten plik jest zarządzany.",
       watch_explained_block2:
         "Ta funkcja obsługuje obecnie treści online i nie będzie dostępna dla dokumentów przesyłanych ręcznie.",
       watch_explained_block3_start:
@@ -1060,7 +1059,7 @@ const TRANSLATIONS = {
         unauthenticated: {
           title: "Wymagane uwierzytelnienie",
           description:
-            "Przed opublikowaniem elementów należy uwierzytelnić się w centrum społeczności AnythingLLM.",
+            "Przed opublikowaniem elementów należy uwierzytelnić się w centrum społeczności Genicon.",
           button: "Połączenie z centrum społeczności",
         },
       },
@@ -1084,7 +1083,7 @@ const TRANSLATIONS = {
     password: {
       title: "Ochrona hasłem",
       description:
-        "Chroń swoją instancję AnythingLLM hasłem. Jeśli go zapomnisz, nie ma metody odzyskiwania, więc upewnij się, że zapisałeś to hasło.",
+        "Chroń swoją instancję Genicon hasłem. Jeśli go zapomnisz, nie ma metody odzyskiwania, więc upewnij się, że zapisałeś to hasło.",
       "password-label": "Hasło instancji",
     },
   },

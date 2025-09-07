@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <a href="https://anythingllm.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="AnythingLLM logo"></a>
+  <a href="https://anythingllm.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="Genicon logo"></a>
 </p>
 
 <div align='center'>
@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-    <b>AnythingLLM:</b> あなたが探していたオールインワンAIアプリ。<br />
+    <b>Genicon:</b> あなたが探していたオールインワンAIアプリ。<br />
     ドキュメントとチャットし、AIエージェントを使用し、高度にカスタマイズ可能で、複数ユーザー対応、面倒な設定は不要です。
 </p>
 
@@ -33,10 +33,10 @@
 </p>
 
 <p align="center">
-👉 デスクトップ用AnythingLLM（Mac、Windows、Linux対応）！<a href="https://anythingllm.com/download" target="_blank">今すぐダウンロード</a>
+👉 デスクトップ用Genicon（Mac、Windows、Linux対応）！<a href="https://anythingllm.com/download" target="_blank">今すぐダウンロード</a>
 </p>
 
-これは、任意のドキュメント、リソース、またはコンテンツの断片を、チャット中にLLMが参照として使用できるコンテキストに変換できるフルスタックアプリケーションです。このアプリケーションを使用すると、使用するLLMまたはベクトルデータベースを選択し、マルチユーザー管理と権限をサポートできます。
+これは、任意のドキュメント、リソース、またはコンテンツの断片を、チャット中に LLM が参照として使用できるコンテキストに変換できるフルスタックアプリケーションです。このアプリケーションを使用すると、使用する LLM またはベクトルデータベースを選択し、マルチユーザー管理と権限をサポートできます。
 
 ![チャット](https://github.com/Mintplex-Labs/anything-llm/assets/16845892/cfc5f47c-bd91-4067-986c-f3f49621a859)
 
@@ -49,29 +49,29 @@
 
 ### 製品概要
 
-AnythingLLMは、市販のLLMや人気のあるオープンソースLLM、およびベクトルDBソリューションを使用して、妥協のないプライベートChatGPTを構築できるフルスタックアプリケーションです。ローカルで実行することも、リモートでホストすることもでき、提供されたドキュメントと知的にチャットできます。
+Genicon は、市販の LLM や人気のあるオープンソース LLM、およびベクトル DB ソリューションを使用して、妥協のないプライベート ChatGPT を構築できるフルスタックアプリケーションです。ローカルで実行することも、リモートでホストすることもでき、提供されたドキュメントと知的にチャットできます。
 
-AnythingLLMは、ドキュメントを`ワークスペース`と呼ばれるオブジェクトに分割します。ワークスペースはスレッドのように機能しますが、ドキュメントのコンテナ化が追加されています。ワークスペースはドキュメントを共有できますが、互いに通信することはないため、各ワークスペースのコンテキストをクリーンに保つことができます。
+Genicon は、ドキュメントを`ワークスペース`と呼ばれるオブジェクトに分割します。ワークスペースはスレッドのように機能しますが、ドキュメントのコンテナ化が追加されています。ワークスペースはドキュメントを共有できますが、互いに通信することはないため、各ワークスペースのコンテキストをクリーンに保つことができます。
 
-## AnythingLLMのいくつかのクールな機能
+## Genicon のいくつかのクールな機能
 
 - **マルチユーザーインスタンスのサポートと権限付与**
 - ワークスペース内のエージェント（ウェブを閲覧、コードを実行など）
 - [ウェブサイト用のカスタム埋め込み可能なチャットウィジェット](https://github.com/Mintplex-Labs/anythingllm-embed/blob/main/README.md)
-- 複数のドキュメントタイプのサポート（PDF、TXT、DOCXなど）
-- シンプルなUIからベクトルデータベース内のドキュメントを管理
-- 2つのチャットモード`会話`と`クエリ`。会話は以前の質問と修正を保持します。クエリはドキュメントに対するシンプルなQAです
+- 複数のドキュメントタイプのサポート（PDF、TXT、DOCX など）
+- シンプルな UI からベクトルデータベース内のドキュメントを管理
+- 2 つのチャットモード`会話`と`クエリ`。会話は以前の質問と修正を保持します。クエリはドキュメントに対するシンプルな QA です
 - チャット中の引用
 - 100%クラウドデプロイメント対応。
-- 「独自のLLMを持参」モデル。
-- 大規模なドキュメントを管理するための非常に効率的なコスト削減策。巨大なドキュメントやトランスクリプトを埋め込むために一度以上支払うことはありません。他のドキュメントチャットボットソリューションよりも90%コスト効率が良いです。
-- カスタム統合のための完全な開発者API！
+- 「独自の LLM を持参」モデル。
+- 大規模なドキュメントを管理するための非常に効率的なコスト削減策。巨大なドキュメントやトランスクリプトを埋め込むために一度以上支払うことはありません。他のドキュメントチャットボットソリューションよりも 90%コスト効率が良いです。
+- カスタム統合のための完全な開発者 API！
 
-### サポートされているLLM、埋め込みモデル、音声モデル、およびベクトルデータベース
+### サポートされている LLM、埋め込みモデル、音声モデル、およびベクトルデータベース
 
 **言語学習モデル：**
 
-- [llama.cpp互換の任意のオープンソースモデル](/server/storage/models/README.md#text-generation-llm-selection)
+- [llama.cpp 互換の任意のオープンソースモデル](/server/storage/models/README.md#text-generation-llm-selection)
 - [OpenAI](https://openai.com)
 - [OpenAI (汎用)](https://openai.com)
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
@@ -94,7 +94,7 @@ AnythingLLMは、ドキュメントを`ワークスペース`と呼ばれるオ�
 
 **埋め込みモデル：**
 
-- [AnythingLLMネイティブ埋め込み](/server/storage/models/README.md)（デフォルト）
+- [Genicon ネイティブ埋め込み](/server/storage/models/README.md)（デフォルト）
 - [OpenAI](https://openai.com)
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 - [LocalAi (すべて)](https://localai.io/)
@@ -104,7 +104,7 @@ AnythingLLMは、ドキュメントを`ワークスペース`と呼ばれるオ�
 
 **音声変換モデル：**
 
-- [AnythingLLM内蔵](https://github.com/Mintplex-Labs/anything-llm/tree/master/server/storage/models#audiovideo-transcription)（デフォルト）
+- [Genicon 内蔵](https://github.com/Mintplex-Labs/anything-llm/tree/master/server/storage/models#audiovideo-transcription)（デフォルト）
 - [OpenAI](https://openai.com/)
 
 **TTS（テキストから音声へ）サポート：**
@@ -131,26 +131,26 @@ AnythingLLMは、ドキュメントを`ワークスペース`と呼ばれるオ�
 
 ### 技術概要
 
-このモノレポは、主に3つのセクションで構成されています：
+このモノレポは、主に 3 つのセクションで構成されています：
 
-- `frontend`: LLMが使用できるすべてのコンテンツを簡単に作成および管理できるviteJS + Reactフロントエンド。
-- `server`: すべてのインタラクションを処理し、すべてのベクトルDB管理およびLLMインタラクションを行うNodeJS expressサーバー。
-- `collector`: UIからドキュメントを処理および解析するNodeJS expressサーバー。
-- `docker`: Dockerの指示およびビルドプロセス + ソースからのビルド情報。
+- `frontend`: LLM が使用できるすべてのコンテンツを簡単に作成および管理できる viteJS + React フロントエンド。
+- `server`: すべてのインタラクションを処理し、すべてのベクトル DB 管理および LLM インタラクションを行う NodeJS express サーバー。
+- `collector`: UI からドキュメントを処理および解析する NodeJS express サーバー。
+- `docker`: Docker の指示およびビルドプロセス + ソースからのビルド情報。
 - `embed`: [埋め込みウィジェット](../embed/README.md)の生成に特化したコード。
 
 ## 🛳 セルフホスティング
 
-Mintplex Labsおよびコミュニティは、AnythingLLMをローカルで実行できる多数のデプロイメント方法、スクリプト、テンプレートを維持しています。以下の表を参照して、お好みの環境でのデプロイ方法を読むか、自動デプロイを行ってください。
+Mintplex Labs およびコミュニティは、Genicon をローカルで実行できる多数のデプロイメント方法、スクリプト、テンプレートを維持しています。以下の表を参照して、お好みの環境でのデプロイ方法を読むか、自動デプロイを行ってください。
 | Docker | AWS | GCP | Digital Ocean | Render.com |
 |----------------------------------------|----|-----|---------------|------------|
 | [![Docker上でデプロイ][docker-btn]][docker-deploy] | [![AWS上でデプロイ][aws-btn]][aws-deploy] | [![GCP上でデプロイ][gcp-btn]][gcp-deploy] | [![DigitalOcean上でデプロイ][do-btn]][do-deploy] | [![Render.com上でデプロイ][render-btn]][render-deploy] |
 
-| Railway                                             |
-| --------------------------------------------------- |
+| Railway                                               |
+| ----------------------------------------------------- |
 | [![Railway上でデプロイ][railway-btn]][railway-deploy] |
 
-[Dockerを使用せずに本番環境のAnythingLLMインスタンスを設定する →](../BARE_METAL.md)
+[Docker を使用せずに本番環境の Genicon インスタンスを設定する →](../BARE_METAL.md)
 
 ## 開発環境のセットアップ方法
 
@@ -166,45 +166,45 @@ Mintplex Labsおよびコミュニティは、AnythingLLMをローカルで実�
 
 ## 貢献する方法
 
-- issueを作成する
-- `<issue number>-<short name>`の形式のブランチ名でPRを作成する
+- issue を作成する
+- `<issue number>-<short name>`の形式のブランチ名で PR を作成する
 - マージしましょう
 
 ## テレメトリーとプライバシー
 
-Mintplex Labs Inc.によって開発されたAnythingLLMには、匿名の使用情報を収集するテレメトリー機能が含まれています。
+Mintplex Labs Inc.によって開発された Genicon には、匿名の使用情報を収集するテレメトリー機能が含まれています。
 
 <details>
-<summary><kbd>AnythingLLMのテレメトリーとプライバシーについての詳細</kbd></summary>
+<summary><kbd>Geniconのテレメトリーとプライバシーについての詳細</kbd></summary>
 
 ### なぜ？
 
-この情報を使用して、AnythingLLMの使用方法を理解し、新機能とバグ修正の優先順位を決定し、AnythingLLMのパフォーマンスと安定性を向上させるのに役立てます。
+この情報を使用して、Genicon の使用方法を理解し、新機能とバグ修正の優先順位を決定し、Genicon のパフォーマンスと安定性を向上させるのに役立てます。
 
 ### オプトアウト
 
-サーバーまたはdockerの.env設定で`DISABLE_TELEMETRY`を「true」に設定して、テレメトリーからオプトアウトします。アプリ内でも、サイドバー > `プライバシー`に移動してテレメトリーを無効にすることができます。
+サーバーまたは docker の.env 設定で`DISABLE_TELEMETRY`を「true」に設定して、テレメトリーからオプトアウトします。アプリ内でも、サイドバー > `プライバシー`に移動してテレメトリーを無効にすることができます。
 
 ### 明示的に追跡するもの
 
 製品およびロードマップの意思決定に役立つ使用詳細のみを追跡します。具体的には：
 
-- インストールのタイプ（Dockerまたはデスクトップ）
+- インストールのタイプ（Docker またはデスクトップ）
 - ドキュメントが追加または削除されたとき。ドキュメントについての情報はありません。イベントが発生したことのみを知ります。これにより、使用状況を把握できます。
 - 使用中のベクトルデータベースのタイプ。どのベクトルデータベースプロバイダーが最も使用されているかを知り、更新があったときに優先して変更を行います。
-- 使用中のLLMのタイプ。最も人気のある選択肢を知り、更新があったときに優先して変更を行います。
+- 使用中の LLM のタイプ。最も人気のある選択肢を知り、更新があったときに優先して変更を行います。
 - チャットが送信された。これは最も一般的な「イベント」であり、すべてのインストールでのこのプロジェクトの日常的な「アクティビティ」についてのアイデアを提供します。再び、イベントのみが送信され、チャット自体の性質や内容に関する情報はありません。
 
-これらの主張を検証するには、`Telemetry.sendTelemetry`が呼び出されるすべての場所を見つけてください。また、これらのイベントは出力ログに書き込まれるため、送信された具体的なデータも確認できます。IPアドレスやその他の識別情報は収集されません。テレメトリープロバイダーは[PostHog](https://posthog.com/)です。
+これらの主張を検証するには、`Telemetry.sendTelemetry`が呼び出されるすべての場所を見つけてください。また、これらのイベントは出力ログに書き込まれるため、送信された具体的なデータも確認できます。IP アドレスやその他の識別情報は収集されません。テレメトリープロバイダーは[PostHog](https://posthog.com/)です。
 
-[ソースコード内のすべてのテレメトリーイベントを表示](https://github.com/search?q=repo%3AMintplex-Labs%2Fanything-llm%20.sendTelemetry\(&type=code)
+[ソースコード内のすべてのテレメトリーイベントを表示](https://github.com/search?q=repo%3AMintplex-Labs%2Fanything-llm%20.sendTelemetry(&type=code)
 
 </details>
 
 ## 🔗 その他の製品
 
-- **[VectorAdmin][vector-admin]**：ベクトルデータベースを管理するためのオールインワンGUIおよびツールスイート。
-- **[OpenAI Assistant Swarm][assistant-swarm]**：単一のエージェントから指揮できるOpenAIアシスタントの軍隊に、ライブラリ全体を変換します。
+- **[VectorAdmin][vector-admin]**：ベクトルデータベースを管理するためのオールインワン GUI およびツールスイート。
+- **[OpenAI Assistant Swarm][assistant-swarm]**：単一のエージェントから指揮できる OpenAI アシスタントの軍隊に、ライブラリ全体を変換します。
 
 <div align="right">
 

@@ -1,4 +1,4 @@
-import { ICON_COMPONENTS } from "@/components/Footer";
+import { ICON_COMPONENTS } from "@/components/Footer/icons";
 import React, { useEffect, useRef, useState } from "react";
 import { Plus, X } from "@phosphor-icons/react";
 

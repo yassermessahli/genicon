@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-import AnythingLLM from "./media/logo/anything-llm.png";
-import AnythingLLMDark from "./media/logo/anything-llm-dark.png";
-import DefaultLoginLogoLight from "./media/illustrations/login-logo.svg";
-import DefaultLoginLogoDark from "./media/illustrations/login-logo-light.svg";
+import Genicon from "./media/logo/genicon.png";
+import GeniconDark from "./media/logo/genicon-dark.png";
+import DefaultLoginLogoLight from "./media/illustrations/login-dark.svg";
+import DefaultLoginLogoDark from "./media/illustrations/login-white.svg";
 import System from "./models/system";
 
 export const REFETCH_LOGO_EVENT = "refetch-logo";
@@ -26,15 +26,15 @@ export function LogoProvider({ children }) {
         setIsCustomLogo(isCustomLogo);
       } else {
         localStorage.getItem("theme") !== "default"
-          ? setLogo(AnythingLLMDark)
-          : setLogo(AnythingLLM);
+          ? setLogo(GeniconDark)
+          : setLogo(Genicon);
         setLoginLogo(DefaultLoginLogo);
         setIsCustomLogo(false);
       }
     } catch (err) {
       localStorage.getItem("theme") !== "default"
-        ? setLogo(AnythingLLMDark)
-        : setLogo(AnythingLLM);
+        ? setLogo(GeniconDark)
+        : setLogo(Genicon);
       setLoginLogo(DefaultLoginLogo);
       setIsCustomLogo(false);
       console.error("Failed to fetch logo:", err);

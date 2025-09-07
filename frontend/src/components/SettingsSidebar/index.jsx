@@ -11,7 +11,6 @@ import {
   PencilSimpleLine,
   Nut,
   Toolbox,
-  Globe,
 } from "@phosphor-icons/react";
 import useUser from "@/hooks/useUser";
 import { isMobile } from "react-device-detect";
@@ -113,7 +112,9 @@ export default function SettingsSidebar() {
                     <SupportEmail />
                     <Link
                       hidden={
-                        user?.hasOwnProperty("role") && user.role !== "admin"
+                        user &&
+                        Object.prototype.hasOwnProperty.call(user, "role") &&
+                        user.role !== "admin"
                       }
                       to={paths.settings.privacy()}
                       className="text-theme-text-secondary hover:text-white text-xs leading-[18px] mx-3"
@@ -154,7 +155,7 @@ export default function SettingsSidebar() {
         >
           <div className="w-full h-full flex flex-col overflow-x-hidden items-between min-w-[235px]">
             <div className="text-theme-text-secondary text-sm font-medium uppercase mt-[4px] mb-0 ml-2">
-              {t("settings.title")}
+              {t("settings.admin-settings")}
             </div>
             <div className="relative h-[calc(100%-60px)] flex flex-col w-full justify-between pt-[10px] overflow-y-scroll no-scroll">
               <div className="h-auto sidebar-items">
@@ -164,7 +165,9 @@ export default function SettingsSidebar() {
                   <SupportEmail />
                   <Link
                     hidden={
-                      user?.hasOwnProperty("role") && user.role !== "admin"
+                      user &&
+                      Object.prototype.hasOwnProperty.call(user, "role") &&
+                      user.role !== "admin"
                     }
                     to={paths.settings.privacy()}
                     className="text-theme-text-secondary hover:text-white hover:light:text-theme-text-primary text-xs leading-[18px] mx-3"
@@ -215,8 +218,113 @@ const SidebarOptions = ({ user = null, t }) => (
   <CanViewChatHistoryProvider>
     {({ viewable: canViewChatHistory }) => (
       <>
+        {/* 1. Preferences (formerly Customization) */}
         <Option
-          btnText={t("settings.ai-providers")}
+          btnText={t("settings.preferences")}
+          icon={<PencilSimpleLine className="h-5 w-5 flex-shrink-0" />}
+          user={user}
+          childOptions={[
+            {
+              btnText: t("settings.interface"),
+              href: paths.settings.interface(),
+              flex: true,
+              roles: ["admin", "manager"],
+            },
+            {
+              btnText: t("settings.branding"),
+              href: paths.settings.branding(),
+              flex: true,
+              roles: ["admin", "manager"],
+            },
+            {
+              btnText: t("settings.chat"),
+              href: paths.settings.chat(),
+              flex: true,
+              roles: ["admin", "manager"],
+            },
+          ]}
+        />
+        {/* 2. Chat settings (formerly Admin) */}
+        <Option
+          btnText={t("settings.chat-settings")}
+          icon={<UserCircleGear className="h-5 w-5 flex-shrink-0" />}
+          user={user}
+          childOptions={[
+            {
+              btnText: t("settings.users"),
+              href: paths.settings.users(),
+              roles: ["admin", "manager"],
+            },
+            {
+              btnText: t("settings.workspaces"),
+              href: paths.settings.workspaces(),
+              roles: ["admin", "manager"],
+            },
+            {
+              hidden: !canViewChatHistory,
+              btnText: t("settings.workspace-chats"),
+              href: paths.settings.chats(),
+              flex: true,
+              roles: ["admin", "manager"],
+            },
+            {
+              btnText: t("settings.invites"),
+              href: paths.settings.invites(),
+              roles: ["admin", "manager"],
+            },
+          ]}
+        />
+        {/* 3. Agents Settings (formerly Agent Skills) */}
+        <Option
+          btnText={t("settings.agents-settings")}
+          icon={<Robot className="h-5 w-5 flex-shrink-0" />}
+          href={paths.settings.agentSkills()}
+          user={user}
+          flex={true}
+          roles={["admin"]}
+        />
+        {/* 4. Developer Tools (formerly Tools) */}
+        <Option
+          btnText={t("settings.developer-tools")}
+          icon={<Toolbox className="h-5 w-5 flex-shrink-0" />}
+          user={user}
+          childOptions={[
+            {
+              hidden: !canViewChatHistory,
+              btnText: t("settings.embeds"),
+              href: paths.settings.embedChatWidgets(),
+              flex: true,
+              roles: ["admin"],
+            },
+            {
+              btnText: t("settings.event-logs"),
+              href: paths.settings.logs(),
+              flex: true,
+              roles: ["admin"],
+            },
+            {
+              btnText: t("settings.api-keys"),
+              href: paths.settings.apiKeys(),
+              flex: true,
+              roles: ["admin"],
+            },
+            {
+              btnText: t("settings.system-prompt-variables"),
+              href: paths.settings.systemPromptVariables(),
+              flex: true,
+              roles: ["admin"],
+            },
+            {
+              btnText: t("settings.browser-extension"),
+              href: paths.settings.browserExtension(),
+              flex: true,
+              roles: ["admin", "manager"],
+            },
+          ]}
+        />
+        {/* 5. AI Tools (formerly AI Providers) */}
+        <Option
+          btnText={t("settings.ai-tools")}
           icon={<Gear className="h-5 w-5 flex-shrink-0" />}
           user={user}
           childOptions={[
@@ -258,139 +366,7 @@ const SidebarOptions = ({ user = null, t }) => (
             },
           ]}
         />
-        <Option
-          btnText={t("settings.admin")}
-          icon={<UserCircleGear className="h-5 w-5 flex-shrink-0" />}
-          user={user}
-          childOptions={[
-            {
-              btnText: t("settings.users"),
-              href: paths.settings.users(),
-              roles: ["admin", "manager"],
-            },
-            {
-              btnText: t("settings.workspaces"),
-              href: paths.settings.workspaces(),
-              roles: ["admin", "manager"],
-            },
-            {
-              hidden: !canViewChatHistory,
-              btnText: t("settings.workspace-chats"),
-              href: paths.settings.chats(),
-              flex: true,
-              roles: ["admin", "manager"],
-            },
-            {
-              btnText: t("settings.invites"),
-              href: paths.settings.invites(),
-              roles: ["admin", "manager"],
-            },
-          ]}
-        />
-        <Option
-          btnText={t("settings.agent-skills")}
-          icon={<Robot className="h-5 w-5 flex-shrink-0" />}
-          href={paths.settings.agentSkills()}
-          user={user}
-          flex={true}
-          roles={["admin"]}
-        />
-        <Option
-          btnText="Community Hub"
-          icon={<Globe className="h-5 w-5 flex-shrink-0" />}
-          childOptions={[
-            {
-              btnText: "Explore Trending",
-              href: paths.communityHub.trending(),
-              flex: true,
-              roles: ["admin"],
-            },
-            {
-              btnText: "Your Account",
-              href: paths.communityHub.authentication(),
-              flex: true,
-              roles: ["admin"],
-            },
-            {
-              btnText: "Import Item",
-              href: paths.communityHub.importItem(),
-              flex: true,
-              roles: ["admin"],
-            },
-          ]}
-        />
-        <Option
-          btnText={t("settings.customization")}
-          icon={<PencilSimpleLine className="h-5 w-5 flex-shrink-0" />}
-          user={user}
-          childOptions={[
-            {
-              btnText: t("settings.interface"),
-              href: paths.settings.interface(),
-              flex: true,
-              roles: ["admin", "manager"],
-            },
-            {
-              btnText: t("settings.branding"),
-              href: paths.settings.branding(),
-              flex: true,
-              roles: ["admin", "manager"],
-            },
-            {
-              btnText: t("settings.chat"),
-              href: paths.settings.chat(),
-              flex: true,
-              roles: ["admin", "manager"],
-            },
-          ]}
-        />
-        <Option
-          btnText={t("settings.tools")}
-          icon={<Toolbox className="h-5 w-5 flex-shrink-0" />}
-          user={user}
-          childOptions={[
-            {
-              hidden: !canViewChatHistory,
-              btnText: t("settings.embeds"),
-              href: paths.settings.embedChatWidgets(),
-              flex: true,
-              roles: ["admin"],
-            },
-            {
-              btnText: t("settings.event-logs"),
-              href: paths.settings.logs(),
-              flex: true,
-              roles: ["admin"],
-            },
-            {
-              btnText: t("settings.api-keys"),
-              href: paths.settings.apiKeys(),
-              flex: true,
-              roles: ["admin"],
-            },
-            {
-              btnText: t("settings.system-prompt-variables"),
-              href: paths.settings.systemPromptVariables(),
-              flex: true,
-              roles: ["admin"],
-            },
-            {
-              btnText: t("settings.browser-extension"),
-              href: paths.settings.browserExtension(),
-              flex: true,
-              roles: ["admin", "manager"],
-            },
-          ]}
-        />
-        <Option
-          btnText={t("settings.security")}
-          icon={<Nut className="h-5 w-5 flex-shrink-0" />}
-          href={paths.settings.security()}
-          user={user}
-          flex={true}
-          roles={["admin", "manager"]}
-          hidden={user?.role}
-        />
+        {/* Experimental features moved here to keep Security last */}
         <HoldToReveal key="exp_features">
           <Option
             btnText={t("settings.experimental-features")}
@@ -401,13 +377,23 @@ const SidebarOptions = ({ user = null, t }) => (
             roles={["admin"]}
           />
         </HoldToReveal>
+        {/* 6. Security (kept as is at last) */}
+        <Option
+          btnText={t("settings.security")}
+          icon={<Nut className="h-5 w-5 flex-shrink-0" />}
+          href={paths.settings.security()}
+          user={user}
+          flex={true}
+          roles={["admin", "manager"]}
+          hidden={user?.role}
+        />
       </>
     )}
   </CanViewChatHistoryProvider>
 );
 
 function HoldToReveal({ children, holdForMs = 3_000 }) {
-  let timeout = null;
+  const timeoutRef = useRef(null);
   const [showing, setShowing] = useState(
     window.localStorage.getItem(
       "anythingllm_experimental_feature_preview_unlocked"
@@ -416,8 +402,9 @@ function HoldToReveal({ children, holdForMs = 3_000 }) {
 
   useEffect(() => {
     const onPress = (e) => {
-      if (!["Control", "Meta"].includes(e.key) || timeout !== null) return;
-      timeout = setTimeout(() => {
+      if (!["Control", "Meta"].includes(e.key) || timeoutRef.current !== null)
+        return;
+      timeoutRef.current = setTimeout(() => {
         setShowing(true);
         // Setting toastId prevents hook spam from holding control too many times or the event not detaching
         showToast("Experimental feature previews unlocked!");
@@ -427,7 +414,8 @@ function HoldToReveal({ children, holdForMs = 3_000 }) {
         );
         window.removeEventListener("keypress", onPress);
         window.removeEventListener("keyup", onRelease);
-        clearTimeout(timeout);
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
       }, holdForMs);
     };
     const onRelease = (e) => {
@@ -435,10 +423,12 @@ function HoldToReveal({ children, holdForMs = 3_000 }) {
       if (showing) {
         window.removeEventListener("keypress", onPress);
         window.removeEventListener("keyup", onRelease);
-        clearTimeout(timeout);
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
         return;
       }
-      clearTimeout(timeout);
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
     };
 
     if (!showing) {
@@ -448,8 +438,12 @@ function HoldToReveal({ children, holdForMs = 3_000 }) {
     return () => {
       window.removeEventListener("keydown", onPress);
       window.removeEventListener("keyup", onRelease);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
+      }
     };
-  }, []);
+  }, [showing, holdForMs]);
 
   if (!showing) return null;
   return children;

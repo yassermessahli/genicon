@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MobileConnection from "@/models/mobile";
 import PreLoader from "@/components/Preloader";
-import Logo from "@/media/logo/anything-llm-infinity.png";
+import Logo from "@/media/logo/genicon-icon.png";
 import paths from "@/utils/paths";
 
 export default function MobileConnectModal({ isOpen, onClose }) {
@@ -34,11 +34,11 @@ export default function MobileConnectModal({ isOpen, onClose }) {
           {/* left column */}
           <div className="flex flex-col w-1/2 gap-y-[16px]">
             <p className="text-[#FFF] text-xl font-bold">
-              Go mobile. Stay local. AnythingLLM Mobile.
+              Go mobile. Stay local. Genicon Mobile.
             </p>
             <p className="text-[#FFF] text-lg">
-              AnythingLLM for mobile allows you to connect or clone your
-              workspace's chats, threads and documents for you to use on the go.
+              Genicon for mobile allows you to connect or clone your workspace's
+              chats, threads and documents for you to use on the go.
               <br />
               <br />
               Run with local models on your phone privately or relay chats
@@ -52,8 +52,8 @@ export default function MobileConnectModal({ isOpen, onClose }) {
               <ConnectionQrCode isOpen={isOpen} />
             </div>
             <p className="text-[#FFF] text-sm w-[300px] text-center">
-              Scan the QR code with the AnythingLLM Mobile app to enable live
-              sync of your workspaces, chats, threads and documents.
+              Scan the QR code with the Genicon Mobile app to enable live sync
+              of your workspaces, chats, threads and documents.
               <br />
               <Link
                 to={paths.documentation.mobileIntroduction()}

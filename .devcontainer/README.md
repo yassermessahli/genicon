@@ -1,6 +1,6 @@
-# AnythingLLM Development Container Setup
+# Genicon Development Container Setup
 
-Welcome to the AnythingLLM development container configuration, designed to create a seamless and feature-rich development environment for this project.
+Welcome to the Genicon development container configuration, designed to create a seamless and feature-rich development environment for this project.
 
 <center><h1><b>PLEASE READ THIS</b></h1></center>
 
@@ -46,7 +46,6 @@ Checklist:
 **Note when using GitHub Codespaces**
 
 - [ ] When running the "Server" for the first time, it will automatically configure its port to be publicly accessible by default, as this is required for the front end to reach the server backend. To know more, read the content of the `.env` file on the frontend folder about this, and if any issues occur, make sure to manually set the port "Visibility" of the "Server" is set to "Public" if needed. Again, this is only needed for developing on GitHub Codespaces.
-
 
 **For the Collector:**
 
