@@ -27,13 +27,13 @@ Here you can find the scripts and known working process to run Genicon outside o
 
 4. Ensure that the `server/.env` file has _at least_ these keys to start. These values will persist and this file will be automatically written and managed after your first successful boot.
 
-```
+```bash
 STORAGE_DIR="/your/absolute/path/to/server/storage"
 ```
 
 5. Edit the `frontend/.env` file for the `VITE_BASE_API` to now be set to `/api`. This is documented in the .env for which one you should use.
 
-```
+```bash
 # VITE_API_BASE='http://localhost:3001/api' # Use this URL when developing locally
 # VITE_API_BASE="https://$CODESPACE_NAME-3001.$GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN/api" # for GitHub Codespaces
 VITE_API_BASE='/api' # Use this URL deploying on non-localhost address OR in docker.
@@ -44,23 +44,32 @@ VITE_API_BASE='/api' # Use this URL deploying on non-localhost address OR in doc
 Genicon is comprised of three main sections. The `frontend`, `server`, and `collector`. When running in production you will be running `server` and `collector` on two different processes, with a build step for compilation of the frontend.
 
 1. Build the frontend application.
-   `cd frontend && yarn build` - this will produce a `frontend/dist` folder that will be used later.
+
+```bash
+   cd frontend && yarn build
+```
 
 2. Copy `frontend/dist` to `server/public` - `cp -R frontend/dist server/public`.
    This should create a folder in `server` named `public` which contains a top level `index.html` file and various other files/folders.
 
 3. Migrate and prepare your database file.
 
-```
+```bash
 cd server && npx prisma generate --schema=./prisma/schema.prisma
 cd server && npx prisma migrate deploy --schema=./prisma/schema.prisma
 ```
 
 4. Boot the server in production
-   `cd server && NODE_ENV=production node index.js &`
+
+```bash
+cd server && NODE_ENV=production node index.js &
+```
 
 5. Boot the collection in another process
-   `cd collector && NODE_ENV=production node index.js &`
+
+```bash
+cd collector && NODE_ENV=production node index.js &
+```
 
 Genicon should now be running on `http://localhost:3001`!
 
